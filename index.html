@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Widget em Tela Cheia Automática</title>
+    <title>Widget em Tela Cheia</title>
     <style>
+        /* Estilos para garantir que o widget ocupe toda a tela */
         html, body {
             height: 100%;
             margin: 0;
@@ -14,22 +15,11 @@
 </head>
 <body>
 
-    <!-- Script do widget -->
+    <!-- Código para carregar o widget -->
     <script src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
         data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLWxvcnlhbmUtbGFubmUtLWV4cGxvcmVyIiwiYXV0aFNlcnZlciI6Imh0dHBzOi8vZGguYXouc291bG1hY2hpbmVzLmNsb3VkL2FwaS9qd3QiLCJhdXRoVG9rZW4iOiJhcGlrZXlfdjFfZTE0MDFhNDEtYWY2Ny00ZDZjLWJmNDgtZTBiNzQ3NmRiMGUwIn0="
         data-sm-layout="fullFrame"
         data-sm-position="bottomRight">
-    </script>
-
-    <script>
-        // Função para iniciar o widget automaticamente
-        window.addEventListener("load", function() {
-            // Tente acessar o widget diretamente após o carregamento da página
-            const smWidget = document.querySelector("sm-widget");
-            if (smWidget) {
-                smWidget.click();  // Simula um clique para abrir
-            }
-        });
     </script>
 
 </body>
