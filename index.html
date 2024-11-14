@@ -1,15 +1,26 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <title>Fullscreen Iframe</title>
+    <style>
+        /* Estilo para garantir que o iframe ocupe a tela toda */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove a borda do iframe */
+        }
+    </style>
 </head>
 <body>
-    <img src="https://drive.google.com/uc?export=view&id=1CXgyhz3DLaXRJZKn_xfH2rYlY9sJkCbY" alt="Minha Imagem" height="700px" width="700px">
-    <img src="icone.png" height="70px" width="70px" onclick="baixar()">
-
+    <iframe src="https://ddna-sm-template-org-prod--learncultureessent.soului.dh.soulmachines.cloud/session" title="Soul Machines Session"></iframe>
 </body>
 </html>
+
 
