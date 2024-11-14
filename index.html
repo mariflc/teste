@@ -5,24 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Widget em Tela Cheia</title>
     <style>
-        /* Estilos para garantir que o iframe ocupe toda a tela */
+        /* Estilos para garantir que o widget ocupe toda a tela */
         html, body {
             height: 100%;
             margin: 0;
             overflow: hidden;
         }
-        iframe {
+        sm-widget {
+            position: fixed;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
-            border: none;
+            z-index: 9999;
         }
     </style>
 </head>
 <body>
-    <!-- Iframe em tela cheia -->
-    <iframe <script
-    src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
-    data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLWxvcnlhbmUtbGFubmUtLWV4cGxvcmVyIiwiYXV0aFNlcnZlciI6Imh0dHBzOi8vZGguYXouc291bG1hY2hpbmVzLmNsb3VkL2FwaS9qd3QiLCJhdXRoVG9rZW4iOiJhcGlrZXlfdjFfZTE0MDFhNDEtYWY2Ny00ZDZjLWJmNDgtZTBiNzQ3NmRiMGUwIn0="
-></script>></iframe>
+
+    <!-- Código para carregar o widget -->
+    <script src="https://static.soulmachines.com/widget-snippet-1.12.0.min.js"
+        data-sm-api-key="eyJzb3VsSWQiOiJkZG5hLWxvcnlhbmUtbGFubmUtLWV4cGxvcmVyIiwiYXV0aFNlcnZlciI6Imh0dHBzOi8vZGguYXouc291bG1hY2hpbmVzLmNsb3VkL2FwaS9qd3QiLCJhdXRoVG9rZW4iOiJhcGlrZXlfdjFfZTE0MDFhNDEtYWY2Ny00ZDZjLWJmNDgtZTBiNzQ3NmRiMGUwIn0="
+        data-sm-layout="fullFrame"
+        data-sm-position="bottomRight">
+    </script>
+
 </body>
 </html>
